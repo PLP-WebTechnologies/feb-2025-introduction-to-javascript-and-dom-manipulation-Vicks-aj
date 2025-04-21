@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .highlight {
+            background-color: yellow;
+            padding: 5px;
+        }
+        #container {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin: 5px;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="mainTitle">JavaScript DOM Demo</h1>
+    
+    <section>
+        <p id="changeText">Click buttons to see magic happen! ✨</p>
+        <button onclick="changeContent()">Change Text</button>
+        <button onclick="toggleHighlight()">Toggle Highlight</button>
+    </section>
+
+    <section>
+        <div id="dynamicContent"></div>
+        <button onclick="addNewElement()">Add Item</button>
+        <button onclick="removeLastElement()">Remove Item</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
